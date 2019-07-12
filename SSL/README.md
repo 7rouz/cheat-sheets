@@ -27,6 +27,11 @@ If the key is password protected, you will see a "password:" prompt.
 The flags in this command are:
 
 -y Read private key file and print public key.
+
 -f Filename of the key file.
 
 ``` ssh-keygen -y -f certificate.key ```
+
+## remove passphrase of a private key 
+
+``` openssl rsa -in passphrase_protected_key -out clear_key ```
