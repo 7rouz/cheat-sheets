@@ -34,4 +34,4 @@ The flags in this command are:
 
 ## remove passphrase of a private key 
 
-``` openssl rsa -in passphrase_protected_key -out clear_key ```
+``` openssl rsa -passin pass:PASSPHRASE -in passphrase_protected_key -out clear_key ```
